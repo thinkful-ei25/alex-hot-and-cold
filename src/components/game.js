@@ -1,20 +1,20 @@
 import React from 'react';
 import './game.css'
+import EntryForm from './entry-form';
 import GuessList from './guess-list';
+import GuessCounter from './guess-counter';
+import Header from './header';
 
 export default function Game(props){
   return(
-    <section className='game'>
-      <h2 id='feedback'>{props.status || 'Make Your Guess!'}</h2>
-      <form>
-        <input id='userGuess' placeholder='Enter your Guess'>
-        </input>
-        <button id='guessButton'>
-          Guess
-        </button>
-      </form>
-      <p>Guess #{props.counter || '0'}!</p>
-      <ul id='guessList'><GuessList /></ul>
-    </section>
+    <div>
+      <Header />
+      <section className='game'>
+        <h2 id='feedback'>{props.status || 'Make Your Guess!'}</h2>
+        <EntryForm />
+        <GuessCounter />
+        <GuessList />
+      </section>
+    </div>
   );
 }
