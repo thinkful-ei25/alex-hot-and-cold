@@ -1,6 +1,7 @@
 import React from 'react';
 import './game.css'
 import EntryForm from './entry-form';
+import Feedback from './feedback';
 import GuessList from './guess-list';
 import GuessCounter from './guess-counter';
 import Header from './header';
@@ -10,7 +11,7 @@ export default function Game(props){
     <div>
       <Header />
       <section className='game'>
-        <h2 id='feedback'>{props.status || 'Make Your Guess!'}</h2>
+        <Feedback />
         <EntryForm />
         <GuessCounter />
         <GuessList />
