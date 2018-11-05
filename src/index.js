@@ -1,18 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import NavigationBar from './components/navigation-bar';
+
 import Header from './components/header';
 import Game from './components/game';
 import * as serviceWorker from './serviceWorker';
-const links = [
-  {text: 'What ?'},
-  {text: '+ New Game'}
-];
-
 
 ReactDOM.render([
-  <NavigationBar links={links} />, 
   <Header />, 
   <Game />], document.getElementById('root'));
 
