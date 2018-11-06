@@ -7,7 +7,7 @@ export default function Header(props) {
   return(
     <header>
       <NavigationBar />
-      <h1 className='header'>Hot or Cold</h1>
+      <h1 className='header'>HOT or COLD</h1>
     </header>
   );
 }

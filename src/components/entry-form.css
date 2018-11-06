@@ -1,0 +1,20 @@
+form {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.userGuess {
+  font-size: 24px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.button {
+  font-size: 24px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 4px;
+}
